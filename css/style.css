@@ -1,0 +1,92 @@
+@media (max-width: 321px) {
+  body:after {
+    content: "device-smartphone";
+    display: none;
+  }
+  body [data-device-tablet],
+  body [data-device-desktop],
+  body [data-device-wide] {
+    display: none;
+  }
+}
+.lte8 body:after {
+  content: "device-smartphone";
+  display: none;
+}
+.lte8 body [data-device-tablet],
+.lte8 body [data-device-desktop],
+.lte8 body [data-device-wide] {
+  display: none;
+}
+@media (min-width: 321px) and (max-width: 781px) {
+  body:after {
+    content: "device-tablet";
+    display: none;
+  }
+  body [data-device-desktop],
+  body [data-device-wide] {
+    display: none;
+  }
+}
+.lte8 body:after {
+  content: "device-tablet";
+  display: none;
+}
+.lte8 body [data-device-desktop],
+.lte8 body [data-device-wide] {
+  display: none;
+}
+@media (min-width: 781px) and (max-width: 1025px) {
+  body:after {
+    content: "device-desktop";
+    display: none;
+  }
+  body [data-device-wide] {
+    display: none;
+  }
+}
+.lte8 body:after {
+  content: "device-desktop";
+  display: none;
+}
+.lte8 body [data-device-wide] {
+  display: none;
+}
+@media (min-width: 1025px) {
+  body:after {
+    content: "device-wide";
+    display: none;
+  }
+}
+.lte8 body:after {
+  content: "device-wide";
+  display: none;
+}
+.lte8 body [data-device-tablet],
+.lte8 body [data-device-desktop],
+.lte8 body [data-device-wide] {
+  display: block;
+}
+
+/* Common
+================================================ */
+
+/* For simple demo purposes */
+div img {
+  width: 100%;
+}
+
+/* Grid system
+================================================ */
+
+.gridContainer_12 {
+  overflow: hidden;
+}
+
+@media (min-width: 781px) {
+  .gridContainer_12 .grid_4 {
+    width: 30%;
+    float:left;
+    margin-left: 2%;
+  }
+}
