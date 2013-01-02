@@ -58,22 +58,9 @@
 	</section>
 
 	<!-- Development version -->
-	<script src="js/src/jquery.responsive-fragments.js"></script>
+	<script src="js/src/jquery.responsivefragments.js"></script>
 
 	<!-- Minified for production -->
-	<!-- script src="js/libs/jquery.responsive-fragments.min.js"></script -->
-
-	<script>
-		$(document).ready(function(){
-			try {
-				// Add a event listner to check for CSS body:after generated 'content'
-				// to match imaginary device 'keyword', see below
-				$(window).resize(function() { checkDeviceCategory(); });
-			} catch(e) {}
-
-			// Run it onLoad()
-			checkDeviceCategory();
-		});
-	</script>
+	<!-- script src="js/libs/jquery.responsivefragments.min.js"></script -->
 </body>
 </html>
