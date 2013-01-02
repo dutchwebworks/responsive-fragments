@@ -1,3 +1,30 @@
+body {
+  font-family: 'Open Sans Condensed', serif;
+  font-size: 18px;
+  color: #555;
+}
+
+h1 {
+  color: #000;
+}
+
+h4 {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #00AEEF;
+}
+
+hr {
+  border: 0;
+  border-top: 3px dashed #ddd;
+  height: 0;
+  margin: 20px 0;
+}
+
+/* MediaQuery for Javascript device 'keyword'
+================================================ */
+
 @media (max-width: 321px) {
   body:after {
     content: "device-smartphone";
@@ -62,6 +89,8 @@
   content: "device-wide";
   display: none;
 }
+
+/* Win/IE8 and lower MUST always show the content */
 .lte8 body [data-device-tablet],
 .lte8 body [data-device-desktop],
 .lte8 body [data-device-wide] {
@@ -87,6 +116,30 @@ div img {
   .gridContainer_12 .grid_4 {
     width: 30%;
     float:left;
-    margin-left: 2%;
+    margin-left: 3%;
   }
+
+  .gridContainer_12 .grid_4:first-child {
+    margin-left: 0;
+  }
+}
+
+/* HTML pieces
+================================================ */
+
+.tabletView,
+.desktopView {
+  padding: 15px;
+  background: #eee;
+
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.tabletView h4,
+.desktopView h4 {
+  margin-top: 0;
+  color: red;
+  font-weight: bold;
 }

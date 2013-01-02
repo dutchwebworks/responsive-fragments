@@ -8,6 +8,8 @@
 <head>
 	<meta charset="UTF-8">
 
+	<link href="//fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300,700" rel="stylesheet">
+
 	<link rel="stylesheet" href="css/style.css" media="screen">
 
 	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
@@ -19,12 +21,26 @@
 <body>
 	<h1>Responsive Fragments</h1>
 
+	<hr>
+
 	<section>
-		<h1>Example web page</h1>
+		<h3>
+			Load in additional HTML fragments based on device category 'keyword', set by CSS3 MediaQuery viewport width.
+		</h3>
+
+		<p>
+			Change the viewport of your browser, starting really small (smartphone small), and going wider, more HTML content is 
+			loaded in using jQuery Ajax based on HTML5 data-attribute URL on div-tag. Making the web browser window smaller hides the (already loaded) content again.
+		</p>
+
+		<div data-device-wide="fragments/wide-screen.html"></div>
 	
 		<div class="gridContainer_12">
 			<div class="grid_4">
+				<h4>Column 1</h4>
+
 				<div data-device-tablet="fragments/tablet.html"></div>
+
 				<p>
 					Introductie. Consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -36,7 +52,10 @@
 			</div>
 
 			<div class="grid_4">
+				<h4>Column 2</h4>
+
 				<div data-device-desktop="fragments/banner.html"></div>
+
 				<p>
 					Introductie. Consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -48,6 +67,8 @@
 			</div>
 
 			<div class="grid_4">
+				<h4>Column 3</h4>			
+
 				<p>
 					Introductie. Consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
