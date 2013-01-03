@@ -37,6 +37,8 @@ In the HTML you create these (empty) `div` -tags with a HTML5 `data-attribute` c
 
 `<div data-device-wide="/fragments/big-video.html"></div>`
 
+Of course you can use more of the above HTML tags in the same web page.
+
 #### Mobile-first
 
 With a bit of HTML, CSS and MediaQuery creativity you could use these empty `div` -tags to display **mobile-first** content by default. And later on have it replaced by `device-tablet` or `device-desktop` category HTML fragments.
