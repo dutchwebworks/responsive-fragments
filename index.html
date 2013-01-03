@@ -19,25 +19,36 @@
 	<title>Dutchwebworks - Responsive Fragments</title>
 </head>
 <body>
-	<h1>Responsive Fragments</h1>
-
-	<hr>
-
-	<section>
+	<hgroup>
+		<h1>Responsive Fragments</h1>	
+		
 		<h3>
 			Load in additional HTML fragments based on device category 'keyword', set by CSS3 MediaQuery viewport width.
 		</h3>
+	</hgroup>
 
+	<section class="intro">
 		<p>
-			Change the viewport of your browser, starting really small (smartphone small), and going wider, more HTML content is 
-			loaded in using jQuery Ajax based on HTML5 data-attribute URL on div-tag. Making the web browser window smaller hides the (already loaded) content again.
+			<strong>Change the viewport</strong> of your browser, <strong>starting</strong> really small (smartphone small), and going wider, <strong>more HTML content is 
+			loaded in</strong>strong> using jQuery Ajax based on <strong>HTML5 data-attribute URL on div-tag</strong>. Making the web browser window smaller hides the (already loaded) content again.
+			This is very usefull for <strong>prototyping</strong> or even production code.
 		</p>
+		
+		<p>
+			<em>Author: <a href="mailto:webdesign@dutchwebworks.nl">Dennis Burger</a>, 2013</em>
+			<em>Github: <a href="https://github.com/dutchwebworks/responsive-fragments">github.com/dutchwebworks/responsive-fragments</a></em>
+			<em>License: MIT (<a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a>)</em>
+		</p>
+		
+		<hr>
+	</section>
 
+	<section role="main">		
 		<div data-device-wide="fragments/wide-screen.html"></div>
 	
 		<div class="gridContainer_12">
 			<div class="grid_4">
-				<h4>Column 1</h4>
+				<h4>Content column 1</h4>
 
 				<div data-device-tablet="fragments/tablet.html"></div>
 
@@ -52,7 +63,7 @@
 			</div>
 
 			<div class="grid_4">
-				<h4>Column 2</h4>
+				<h4>Content column 2</h4>
 
 				<div data-device-desktop="fragments/banner.html"></div>
 
@@ -67,10 +78,16 @@
 			</div>
 
 			<div class="grid_4">
-				<h4>Column 3</h4>			
+				<h4>Content column 3</h4>			
 
 				<p>
 					Introductie. Consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				</p>
+
+				<p>
+					Adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				</p>
